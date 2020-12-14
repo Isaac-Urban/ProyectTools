@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/textura"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="221dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="80dp"
+        android:background="#007C3C3C"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@mipmap/logo_main" />
+
+    <Button
+        android:id="@+id/btvamos"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/ic_baseline_arrow_circle_up_24"
+        android:backgroundTint="#263B91"
+        android:fontFamily="@font/miriam_libre"
+        android:gravity="fill|fill_horizontal"
+        android:onClick="Vamos"
+        android:rotation="90"
+        android:textAlignment="gravity"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_user"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/pt_user"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="333dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="80dp"
+        android:autofillHints=""
+        android:backgroundTint="#263B91"
+        android:ems="10"
+        android:fontFamily="@font/miriam_libre"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        android:shadowColor="#000000"
+        android:shadowDx="10.5"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

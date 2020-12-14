@@ -1,0 +1,54 @@
+<resources>
+    // main
+    <string name="app_name">PCStudent</string>
+    <string name="user_name">¡Ingresa un nombre de usuario!</string>
+    <string name="button1">¡Vamos!</string>
+
+    // body
+    <string name="greeting">¡BIENVENIDO _________ !</string>
+    <string name="order">¿Qué aprenderás hoy?</string>
+    <string name="Home">Home</string>
+    <string name="Love">Like page</string>
+    <string name="Add">Add</string>
+    <string name="Logo">Logo</string>
+    <string name="what">Logo</string>
+    <string name="ib_one">Nivel I</string>
+    <string name="ib_two">Nivel II</string>
+    <string name="ib_three">Nivel III</string>
+    <string name="ib_four">Nivel IV</string>
+    <string name="ib_five">Nivel V</string>
+    // quiz
+    <string name="quiz_message">[   PUNTAJE = ______   ] </string>
+    <string name="vidas">o o o </string>
+    <string name="points">123</string>
+    <string name="Next">Siguiente</string>
+    <string name="Menu">Inicio</string>
+
+
+    // question one
+    <array name="questions">
+        <item>¿Cuáles son las partes del procesador?;*Unidad de control, Unidad aritmética lógica y
+            Registros;Memoria RAM, Disco Duro y SSD;Gabinete, Monitor, Teclado
+        </item>
+        <item>¿Qué hace un núcleo?;*Permite realizar mayor cantidad de tareas en una
+            computadora;Guardar datos;Sobreescribir datos
+        </item>
+        <item>¿Qué significa SSD?;*Solid State Drive;Hard Drive Disk;Solid Static Disk</item>
+        <item>¿Qué tipo de memoria es la memoria RAM?;*Lectura y escritura;Escritura;Lectura</item>
+        <item>¿Qué significa DDR en las memorias RAM?;Disk Drive Recording;Disk Data
+            Recording;*Double Data Rate
+        </item>
+    </array>
+
+
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="Inicio">Inicio</string>
+    <string name="Menú">Menú</string>
+
+</resources>

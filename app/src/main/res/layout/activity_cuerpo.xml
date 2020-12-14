@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/textura"
+    android:backgroundTintMode="screen"
+    tools:context=".CuerpoActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_barra"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/miriam_libre"
+        android:gravity="center_vertical"
+        android:text="@string/greeting"
+        android:textAlignment="center"
+        android:textColor="#090000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_bar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_menu_bar"
+        android:backgroundTint="#081849"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bar_menu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_home"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <ImageButton
+        android:id="@+id/ib_what"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="12dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/what"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toEndOf="@+id/iv_add"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <ImageView
+        android:id="@+id/iv_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/Home"
+        android:onClick="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageView
+        android:id="@+id/iv_web"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/Love"
+        android:onClick="Web"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_add"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toEndOf="@+id/iv_home"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+    <TextView
+        android:id="@+id/tv_memory_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_barra" />
+
+    <com.example.proyecttools.Button_efect
+        android:id="@+id/bt_level_one"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        android:background="@mipmap/level_one"
+        android:onClick="Level_One"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_barra" />
+
+    <com.example.proyecttools.Button_efect
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/level_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_level_one" />
+
+    <com.example.proyecttools.Button_efect
+        android:id="@+id/button3"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/level_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <com.example.proyecttools.Button_efect
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/conceptos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <com.example.proyecttools.Button_efect
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

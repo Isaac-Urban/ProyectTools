@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/textura"
+    android:backgroundTintMode="screen"
+    tools:context=".QuizOneActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:fontFamily="@font/miriam_libre"
+        android:textColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_answers"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <Button
+        android:id="@+id/button_check"
+        android:layout_width="181dp"
+        android:layout_height="57dp"
+        android:background="@drawable/drawable_button"
+        android:fontFamily="@font/miriam_libre"
+        android:text="@string/Next"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_media_ff"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_answers"
+        app:layout_constraintVertical_bias="0.847"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="159dp"
+        android:layout_height="57dp"
+        android:background="@drawable/drawable_button"
+        android:fontFamily="@font/miriam_libre"
+        android:onClick="Home"
+        android:text="@string/Home"
+        android:textColor="#FFFFFF"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_answers"
+        app:layout_constraintVertical_bias="0.847"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/tv_quiz_question_one"
+        android:layout_width="404dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:background="@mipmap/tv_questions"
+        android:fontFamily="@font/miriam_libre"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <RadioGroup
+        android:id="@+id/rg_answers"
+        android:layout_width="408dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/miriam_libre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz_question_one">
+
+        <RadioButton
+            android:id="@+id/rb_one"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_two"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_three"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/ic_think"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/ic_brain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

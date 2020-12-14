@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#263B91</color>
+    <color name="primary_color">#263B91</color>  //botones y barra
+    <color name="second_color">#FFF0B106</color>
+    <color name="user_bar">#F0B106</color>  //barrita de ingresa usuario
+
+    <color name="teal_700">#F0B106</color> //barrita nombre usurio
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+</resources>
