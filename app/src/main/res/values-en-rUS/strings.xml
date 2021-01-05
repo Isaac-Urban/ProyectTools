@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PCStudent</string>
+    <string name="user_name">Enter a username!</string>
+    <string name="button1">Let\'s go!</string>
+    <string name="order">What will you learn today?</string>
+    <string name="Home">Home</string>
+    <string name="Love">"Follow us "</string>
+    <string name="Add">Add</string>
+    <string name="Tools">Settings</string>
+    <string name="Logo">Logo</string>
+    <string name="category_1">Category 1</string>
+    <string name="category_2">Category 2</string>
+    <string name="category_3">Category 3</string>
+    <string name="category_4">Category 4</string>
+    <string name="category_5">Category 5</string>
+    <string name="category_6">Category 6</string>
+    <string name="Menú">Main Menu</string>
+    <string name="Next">Next</string>
+    <string name="Finish">Finish</string>
+    <string name="prev">Previous</string>
+    <string name="Start_Again">Start Again</string>
+    <string name="Resultados">Results</string>
+    <string name="todo">EVERYTHING</string>
+    <string name="WELCOME">WELCOME</string>
+</resources>

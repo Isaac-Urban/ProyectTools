@@ -5,27 +5,33 @@
     <string name="button1">¡Vamos!</string>
 
     // body
-    <string name="greeting">¡BIENVENIDO _________ !</string>
+    <string name="WELCOME">¡BIENVENIDO!</string>
     <string name="order">¿Qué aprenderás hoy?</string>
-    <string name="Home">Home</string>
-    <string name="Love">Like page</string>
-    <string name="Add">Add</string>
+    <string name="Add">Añadir</string>
     <string name="Logo">Logo</string>
-    <string name="what">Logo</string>
-    <string name="ib_one">Nivel I</string>
-    <string name="ib_two">Nivel II</string>
-    <string name="ib_three">Nivel III</string>
-    <string name="ib_four">Nivel IV</string>
-    <string name="ib_five">Nivel V</string>
+    <string name="category_1">Categoria 1</string>
+    <string name="category_2">Categoria 2</string>
+    <string name="category_3">Categoria 3</string>
+    <string name="category_4">Categoria 4</string>
+    <string name="category_5">Categoria 5</string>
+    <string name="category_6">Categoria 6</string>
+
+    // menu
+    <string name="todo">TODO</string>
+    <string name="Home">Inicio</string>
+    <string name="Love">Síguenos</string>
+    <string name="Tools">Ajustes</string>
+
     // quiz
-    <string name="quiz_message">[   PUNTAJE = ______   ] </string>
-    <string name="vidas">o o o </string>
-    <string name="points">123</string>
+    <string name="Menú">Menú principal</string>
     <string name="Next">Siguiente</string>
-    <string name="Menu">Inicio</string>
+    <string name="Finish">Terminar</string>
+    <string name="prev">Anterior</string>
+    <string name="Start_Again">Empezar de nuevo</string>
+    <string name="Resultados">Resultados</string>
 
 
-    // question one
+    // questionary one
     <array name="questions">
         <item>¿Cuáles son las partes del procesador?;*Unidad de control, Unidad aritmética lógica y
             Registros;Memoria RAM, Disco Duro y SSD;Gabinete, Monitor, Teclado
@@ -41,14 +47,7 @@
     </array>
 
 
-    <string name="todo">TODO</string>
-    <string name="todo1">TODO</string>
-    <string name="todo2">TODO</string>
-    <string name="todo3">TODO</string>
-    <string name="todo4">TODO</string>
-    <string name="todo5">TODO</string>
-    <string name="todo6">TODO</string>
-    <string name="Inicio">Inicio</string>
-    <string name="Menú">Menú</string>
+
+
 
 </resources>

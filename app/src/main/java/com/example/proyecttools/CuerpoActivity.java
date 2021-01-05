@@ -40,14 +40,13 @@ public class CuerpoActivity extends AppCompatActivity {
 //        parte donde indicamos que ya aparezca el id_user
         tv_greeting = findViewById(R.id.tv_barra);
         tv_memory = findViewById(R.id.tv_memory_user);
-        String id_user = getIntent().getStringExtra("id_user");                      //alojamos nombre usuario gracias a la key
-        tv_greeting.setText("¡Bienvenido " + id_user + "!");                               //indicamos el lugar en dónde ponemos el texto
-        tv_memory.setText(id_user);                               //indicamos el lugar en dónde ponemos el texto
+        String id_user = getIntent().getStringExtra("id_user");                                 //alojamos nombre usuario gracias a la key
+        tv_memory.setText(id_user);                                                                   //indicamos el lugar en dónde ponemos el texto
 
     }
 
     //    metodo para el button nivel 1
-    public void Level_One(View view) {
+    public void Quiz_One(View view) {
         Intent levelOne = new Intent(this, QuizOneActivity.class);
         levelOne.putExtra("id_user", tv_memory.getText().toString());
         startActivity(levelOne);
@@ -73,6 +72,15 @@ public class CuerpoActivity extends AppCompatActivity {
         startActivity(conceptos);
     }
 
+    public void Overflow(View view) {
+        Intent cuerpo = new Intent(this, CuerpoActivity.class);
+        cuerpo.putExtra("id_user", tv_memory.getText().toString());                                 // aqui pasamos el id_user a la otra activity
+        startActivity(cuerpo);
+    }
 
 
 }
+
+
+
+//tv_greeting.setText("¡BIENVENIDO " + id_user + "!");                                         //indicamos el lugar en dónde ponemos el texto

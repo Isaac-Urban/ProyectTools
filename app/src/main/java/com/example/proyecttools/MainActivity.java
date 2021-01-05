@@ -1,5 +1,6 @@
 package com.example.proyecttools;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         if (registro_user.length() == 0) {                                                                    //nos permite conocerel ancho de la cadena de caracteres
             Toast.makeText(this, "Debes ingresar un nombre", Toast.LENGTH_SHORT).show();
         } else if (registro_user.length() != 0) {
-            Toast.makeText(this, "Validando registro", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Validando registro", Toast.LENGTH_SHORT).show();
             Toast.makeText(this, "¡Listo!", Toast.LENGTH_SHORT).show();
 
             SharedPreferences preferences = getSharedPreferences("datos", Context.MODE_PRIVATE);       //
@@ -79,31 +80,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
 }
-
-
-
-
-
-
-
-
-
-
-//
-//    //metodo para mostrar y ocultuar el menu
-//    public boolean onCreateOptionsMenu(Menu menu){ //objeto para recibir un parámetro
-//        getMenuInflater().inflate(R.menu.menu, menu); //carpeta - nombre de acvtivity - nombre de objeto por parámetro
-//        return true;
-//    }
-//    // metodo para asignar las funciones correspondientes a las opciones
-//    public boolean onOptionsItemSelected(MenuItem item){
-//        int id = item.getItemId();     //nos permite obtener el item seleccionado
-//
-//        if(id == R.id.Menu_One){
-//            Toast.makeText(this,"Este boton va al inicio", Toast.LENGTH_SHORT).show();
-//        }else if(id == R.id.Menu_Two){
-//            Toast.makeText(this,"Este boton va al menu", Toast.LENGTH_SHORT).show();
-//        }
-//        return super.onOptionsItemSelected(item);        //retornamos el mismo valor de nuestro metodo
-//    }

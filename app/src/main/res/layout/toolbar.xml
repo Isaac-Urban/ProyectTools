@@ -13,5 +13,17 @@
     app:titleTextColor="@color/white"
     >
 
+    <Button
+        android:id="@+id/bt_overflow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_baseline_home_24"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="Overflow" />
+
 
 </androidx.appcompat.widget.Toolbar>

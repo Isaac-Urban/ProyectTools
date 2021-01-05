@@ -29,42 +29,43 @@
         app:layout_constraintVertical_bias="0.268" />
 
     <Button
-        android:id="@+id/button_check"
-        android:layout_width="181dp"
+        android:id="@+id/bt_next"
+        android:layout_width="155dp"
         android:layout_height="57dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/drawable_button"
+        android:backgroundTint="#000000"
         android:fontFamily="@font/miriam_libre"
-        android:text="@string/Next"
+        android:iconTint="#000000"
+        android:iconTintMode="multiply"
         android:textColor="#FFFFFF"
-        app:icon="@android:drawable/ic_media_ff"
-        app:iconTint="#FFFFFF"
-        app:iconTintMode="multiply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg_answers"
         app:layout_constraintVertical_bias="0.847"
-        app:strokeWidth="2dp" />
+        tools:targetApi="o" />
 
     <Button
-        android:id="@+id/button_back"
-        android:layout_width="159dp"
+        android:id="@+id/bt_prev"
+        android:layout_width="155dp"
         android:layout_height="57dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/drawable_button"
+        android:backgroundTint="#000000"
         android:fontFamily="@font/miriam_libre"
-        android:onClick="Home"
-        android:text="@string/Home"
+        android:iconTint="#000000"
         android:textColor="#FFFFFF"
-        app:icon="@drawable/ic_baseline_home_24"
-        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg_answers"
         app:layout_constraintVertical_bias="0.847"
-        app:strokeWidth="2dp" />
+        tools:targetApi="o" />
 
     <TextView
         android:id="@+id/tv_quiz_question_one"
@@ -76,7 +77,6 @@
         android:background="@mipmap/tv_questions"
         android:fontFamily="@font/miriam_libre"
         android:gravity="center_vertical"
-        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -88,9 +88,9 @@
 
     <RadioGroup
         android:id="@+id/rg_answers"
-        android:layout_width="408dp"
-        android:layout_height="240dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/miriam_libre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.173"
@@ -101,18 +101,41 @@
             android:id="@+id/rb_one"
             android:layout_width="match_parent"
             android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:buttonTint="#000000"
+            android:buttonTintMode="multiply"
+            android:fontFamily="@font/miriam_libre"
+            android:textColor="#000000"
             android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_two"
             android:layout_width="match_parent"
             android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:buttonTint="#000000"
+            android:buttonTintMode="multiply"
+            android:fontFamily="@font/miriam_libre"
             android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/rb_three"
             android:layout_width="match_parent"
             android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:backgroundTintMode="multiply"
+            android:buttonTint="#000000"
+            android:buttonTintMode="multiply"
+            android:fontFamily="@font/miriam_libre"
             android:textAlignment="viewStart"
             android:textSize="18sp" />
     </RadioGroup>
@@ -122,7 +145,7 @@
         android:layout_width="59dp"
         android:layout_height="57dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="210dp"
         android:background="@drawable/ic_think"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -133,10 +156,9 @@
         android:id="@+id/textView2"
         android:layout_width="59dp"
         android:layout_height="57dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="36dp"
         android:background="@drawable/ic_brain"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
