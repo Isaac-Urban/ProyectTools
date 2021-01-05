@@ -1,0 +1,12 @@
+Esta es la priemra versión del proyecto.
+1. Descarga el proyecto como zip
+2. Desscomprime y abre con Android Studio
+
+Explicación de contenido
+MainActivity.java & activity_main.xml: Contiene la vista principal de la App, en donde el usuario ingresa su nombre.
+CuerpoActivity.java & activity_cuerpo.xml: Contiene la parte del menú, donde el usuario selecciona la categoria de preguntas.
+ActivityWeb.java & activity_web.xml: Contiene lo que nos permite abrir la página web dentro de la App.
+ConceptosActivity.java & activity_conceptos.xml: Contiene el primer nivel de preguntas.
+SplashActivity.java & activity_splash.xml: Contiene la vista de la App al iniciarla.
+Button_efect.java: Contiene un efecto de botton
+toolbar.xml: Contiene la barra de la aplicación 
