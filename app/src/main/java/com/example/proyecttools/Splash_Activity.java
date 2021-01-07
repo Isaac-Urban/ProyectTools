@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
-public class SplashActivity extends AppCompatActivity {
+public class Splash_Activity extends AppCompatActivity {
 
     private final int DURACION_SPLASH = 2000;                             //duracion en milisegundos de la vista splash
 
@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable(){
             public void run(){
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(Splash_Activity.this, Main_Activity.class);
                 startActivity(intent);
                 finish();
             };

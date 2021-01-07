@@ -1,110 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/textura"
     android:backgroundTintMode="screen"
-    tools:context=".QuizOneActivity">
+    tools:context=".CategoryOne_Activity">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_score"
+        />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/usuario"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_score"
+        app:layout_constraintEnd_toStartOf="@id/tv_maxScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_maxScore"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/maximo_puntaje"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_vidas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_username"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/puntuacion"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/view_top"
+        app:layout_constraintEnd_toStartOf="@id/tv_vidas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_vidas"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/vidas"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/view_top"
+        app:layout_constraintEnd_toStartOf="@id/iv_vidas"
+        app:layout_constraintStart_toEndOf="@id/tv_score"
+        app:layout_constraintTop_toBottomOf="@id/tv_maxScore" />
+
+    <ImageView
+        android:id="@+id/iv_vidas"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/tres_vidas"
+        android:contentDescription="@string/vidas"
+        app:layout_constraintBottom_toTopOf="@id/view_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_vidas"
+        app:layout_constraintTop_toBottomOf="@id/tv_maxScore" />
 
     <TextView
         android:id="@+id/tv_user"
-        android:layout_width="135dp"
-        android:layout_height="34dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/miriam_libre"
         android:textColor="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg_answers"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/bt_next"
-        android:layout_width="155dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="6dp"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/drawable_button"
-        android:backgroundTint="#000000"
+        android:backgroundTint="#263B91"
         android:fontFamily="@font/miriam_libre"
         android:iconTint="#000000"
-        android:iconTintMode="multiply"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt_prev"
         app:layout_constraintTop_toBottomOf="@+id/rg_answers"
-        app:layout_constraintVertical_bias="0.847"
         tools:targetApi="o" />
 
     <Button
         android:id="@+id/bt_prev"
-        android:layout_width="155dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="6dp"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/drawable_button"
-        android:backgroundTint="#000000"
+        android:backgroundTint="#263B91"
         android:fontFamily="@font/miriam_libre"
         android:iconTint="#000000"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintEnd_toStartOf="@id/bt_next"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg_answers"
-        app:layout_constraintVertical_bias="0.847"
         tools:targetApi="o" />
 
+
     <TextView
-        android:id="@+id/tv_quiz_question_one"
-        android:layout_width="404dp"
-        android:layout_height="167dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="4dp"
-        android:background="@mipmap/tv_questions"
+        android:id="@+id/view_top"
+        android:layout_width="400dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#263B91"
+        app:layout_constraintBottom_toTopOf="@+id/tv_quiz_questions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/view_bottom"
+        android:layout_width="400dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#263B91"
+        app:layout_constraintBottom_toTopOf="@id/rg_answers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz_questions" />
+
+    <TextView
+        android:id="@+id/tv_quiz_questions"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
         android:fontFamily="@font/miriam_libre"
-        android:gravity="center_vertical"
+        android:gravity="center_horizontal|center_vertical"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/view_bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/view_top" />
 
     <RadioGroup
         android:id="@+id/rg_answers"
-        android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="70dp"
+        android:background="#9E7916"
         android:fontFamily="@font/miriam_libre"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_quiz_question_one">
+        app:layout_constraintTop_toBottomOf="@+id/view_bottom">
 
         <RadioButton
             android:id="@+id/rb_one"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@color/white"
+            android:layout_height="65dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#F3FFFFFF"
             android:buttonTint="#000000"
             android:buttonTintMode="multiply"
             android:fontFamily="@font/miriam_libre"
@@ -114,11 +219,10 @@
         <RadioButton
             android:id="@+id/rb_two"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@color/white"
+            android:layout_height="65dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#F3FFFFFF"
             android:buttonTint="#000000"
             android:buttonTintMode="multiply"
             android:fontFamily="@font/miriam_libre"
@@ -127,38 +231,17 @@
         <RadioButton
             android:id="@+id/rb_three"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@color/white"
+            android:layout_height="65dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#F3FFFFFF"
             android:backgroundTintMode="multiply"
             android:buttonTint="#000000"
             android:buttonTintMode="multiply"
             android:fontFamily="@font/miriam_libre"
-            android:textAlignment="viewStart"
             android:textSize="18sp" />
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="59dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="210dp"
-        android:background="@drawable/ic_think"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="59dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="210dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/ic_brain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

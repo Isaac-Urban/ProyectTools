@@ -1,6 +1,6 @@
 <resources>
     // main
-    <string name="app_name">PCStudent</string>
+    <string name="app_name" translatable="false">PCStudent</string>
     <string name="user_name">¡Ingresa un nombre de usuario!</string>
     <string name="button1">¡Vamos!</string>
 
@@ -29,6 +29,14 @@
     <string name="prev">Anterior</string>
     <string name="Start_Again">Empezar de nuevo</string>
     <string name="Resultados">Resultados</string>
+    <string name="registrar">Registrar</string>
+    <string name="puntuacion">Puntaje = 0/100</string>
+    <string name="maximo_puntaje">MáxPuntaje = </string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="Salir">Salir</string>
+    <string name="Regresar">Regresar</string>
+    <string name="usuario">Usuario:</string>
+    <string name="vidas">Vidas:</string>
 
 
     // questionary one
@@ -45,9 +53,6 @@
             Recording;*Double Data Rate
         </item>
     </array>
-
-
-
 
 
 </resources>
