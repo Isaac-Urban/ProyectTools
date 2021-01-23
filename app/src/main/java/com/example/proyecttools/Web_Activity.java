@@ -17,7 +17,7 @@ public class Web_Activity extends AppCompatActivity {
 
         wv1 = findViewById(R.id.wv_1); //conexión parte lógica a gráfica
         wv1.setWebViewClient(new WebViewClient()); //abre la pestaña del navegador en la misma app
-        wv1.loadUrl("https://www.upiicsa.ipn.mx/");
+        wv1.loadUrl("https://www.facebook.com/PC-Student-105972798130215/");
     }
 
 //Indicamos que mediante el boton back del telefono tambien aplique la animacion

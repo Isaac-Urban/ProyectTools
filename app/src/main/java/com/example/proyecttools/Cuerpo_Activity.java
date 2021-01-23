@@ -4,14 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.transition.Fade;
 import android.view.View;
 //import android.widget.Button;
 //import android.widget.EditText;
-import android.view.animation.DecelerateInterpolator;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Cuerpo_Activity extends AppCompatActivity {
 
@@ -40,10 +37,20 @@ public class Cuerpo_Activity extends AppCompatActivity {
     }
 
     //    metodo para el button conceptos
-    public void Conceptos(View view) {
-        Intent conceptos = new Intent(this, Conceptos_Activity.class);
-        conceptos.putExtra("username", tv_memory.getText().toString());
-        startActivity(conceptos);
+    public void Almacenamiento(View view) {
+        Intent Almacenamiento = new Intent(this, Almacenamiento_Activity.class);
+        Almacenamiento.putExtra("username", tv_memory.getText().toString());
+        startActivity(Almacenamiento);
+    }
+    public void Redes(View view){
+        Intent Redes = new Intent(this, Redes_Activity.class);
+        Redes.putExtra("username", tv_memory.getText().toString());
+        startActivity(Redes);
+    }
+    public void Procesador(View view){
+        Intent Procesador = new Intent(this, Procesador_Activity.class);
+        Procesador.putExtra("username", tv_memory.getText().toString());
+        startActivity(Procesador);
     }
 
     //    metodo para el button atrás
@@ -65,6 +72,14 @@ public class Cuerpo_Activity extends AppCompatActivity {
         cuerpo.putExtra("username", tv_memory.getText().toString());                                 // aqui pasamos el id_user a la otra activity
         startActivity(cuerpo);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+    }
+
+    public void Personales (View view){
+        Toast.makeText(this, "AUN NO HAY PREGUNTAS ALMACENADAS", Toast.LENGTH_SHORT).show();
+    }
+
+    public void Modificar (View view){
+        Toast.makeText(this, "Aun NO esta lista", Toast.LENGTH_SHORT).show();
     }
 
 //Indicamos que mediante el boton back del telefono tambien aplique la animacion

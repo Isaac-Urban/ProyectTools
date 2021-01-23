@@ -30,7 +30,6 @@ public class Main_Activity extends AppCompatActivity {
 
     private EditText et1;                                                                           //variable nombre de usuario
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,14 +41,10 @@ public class Main_Activity extends AppCompatActivity {
         SharedPreferences Save_nombre = getSharedPreferences("datos", Context.MODE_PRIVATE);           //linea para recuperar lo que esta guardado
         et1.setText(Save_nombre.getString("name", ""));                                         //lo que se haya encontrado debe colocarse aquí
 
-
     }
-
 
     //Metodo del button vamos
     public void Vamos(View view) {
-
-
         String username = et1.getText().toString();                                                    //  Metodo para registrar nombre
                                                                                                         //  validación
         if (username.length() == 0) {                                                                    //nos permite conocerel ancho de la cadena de caracteres

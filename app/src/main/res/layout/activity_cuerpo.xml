@@ -101,7 +101,7 @@
         android:layout_marginBottom="12dp"
         android:backgroundTint="#FFF7F7"
         android:contentDescription="@string/Home"
-        android:onClick="Home"
+        android:onClick="Modificar"
         app:layout_constraintBottom_toBottomOf="@id/tv_bar_menu"
         app:layout_constraintEnd_toStartOf="@+id/iv_setings"
         app:layout_constraintStart_toEndOf="@id/iv_web"
@@ -118,7 +118,7 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="12dp"
         android:contentDescription="@string/Home"
-        android:onClick="Home"
+        android:onClick="Modificar"
         app:layout_constraintBottom_toBottomOf="@id/tv_bar_menu"
         app:layout_constraintEnd_toEndOf="@id/tv_bar_menu"
         app:layout_constraintStart_toEndOf="@id/iv_add"
@@ -145,7 +145,7 @@
         android:layout_marginBottom="3dp"
         android:background="@drawable/drawable_button"
         android:backgroundTint="#002C54"
-        android:drawableBottom="@android:drawable/btn_star_big_on"
+        android:drawableBottom="@drawable/ic_baseline_computer_24"
         android:drawingCacheQuality="high"
         android:fontFamily="@font/miriam_libre"
         android:onClick="Quiz_One"
@@ -155,81 +155,11 @@
         android:soundEffectsEnabled="true"
         android:text="@string/category_1"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_cat_3"
         app:layout_constraintEnd_toStartOf="@+id/bt_cat_2"
         app:layout_constraintStart_toStartOf="@id/Pantalla"
         app:layout_constraintTop_toBottomOf="@+id/tv_memory_user" />
-
-    <Button
-        android:id="@+id/bt_cat_3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="3dp"
-        android:background="@drawable/drawable_button"
-        android:backgroundTint="#6E6702"
-        android:drawableBottom="@drawable/ic_baseline_computer_24"
-        android:fontFamily="@font/miriam_libre"
-        android:text="@string/category_3"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:paddingTop="10dp"
-        android:paddingBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_cat_5"
-        app:layout_constraintEnd_toStartOf="@+id/bt_cat_4"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/Pantalla"
-        app:layout_constraintTop_toBottomOf="@+id/bt_cat_1" />
-
-    <Button
-        android:id="@+id/bt_cat_6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/drawable_button"
-        android:backgroundTint="#004D47"
-        android:drawableBottom="@drawable/ic_baseline_tablet_24"
-        android:fontFamily="@font/miriam_libre"
-        android:paddingTop="10dp"
-        android:paddingBottom="30dp"
-        android:text="@string/category_6"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_bar_menu"
-        app:layout_constraintEnd_toEndOf="@id/Pantalla"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bt_cat_5"
-        app:layout_constraintTop_toBottomOf="@+id/bt_cat_4"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/bt_cat_5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/drawable_button"
-        android:backgroundTint="#D19E08"
-        android:drawableBottom="@drawable/ic_baseline_live_tv_24"
-        android:fontFamily="@font/miriam_libre"
-        android:paddingTop="10dp"
-        android:paddingBottom="30dp"
-        android:text="@string/category_5"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_bar_menu"
-        app:layout_constraintEnd_toStartOf="@+id/bt_cat_6"
-        app:layout_constraintStart_toStartOf="@id/Pantalla"
-        app:layout_constraintTop_toBottomOf="@+id/bt_cat_3"
-        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/bt_cat_2"
@@ -241,18 +171,42 @@
         android:layout_marginBottom="3dp"
         android:background="@drawable/drawable_button"
         android:backgroundTint="#7F152E"
-        android:drawableBottom="@android:drawable/ic_delete"
+        android:drawableBottom="@android:drawable/ic_menu_save"
         android:fontFamily="@font/miriam_libre"
-        android:onClick="Conceptos"
+        android:onClick="Almacenamiento"
         android:paddingTop="10dp"
         android:paddingBottom="30dp"
         android:text="@string/category_2"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_cat_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bt_cat_1"
         app:layout_constraintTop_toBottomOf="@+id/tv_memory_user" />
+
+    <Button
+        android:id="@+id/bt_cat_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/drawable_button"
+        android:backgroundTint="#B58908"
+        android:drawableBottom="@drawable/ic_baseline_5g_24"
+        android:fontFamily="@font/miriam_libre"
+        android:onClick="Redes"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp"
+        android:text="@string/category_3"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_cat_5"
+        app:layout_constraintEnd_toStartOf="@+id/bt_cat_4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/Pantalla"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cat_1" />
 
     <Button
         android:id="@+id/bt_cat_4"
@@ -264,16 +218,67 @@
         android:layout_marginBottom="3dp"
         android:background="@drawable/drawable_button"
         android:backgroundTint="#3B204F"
-        android:drawableBottom="@drawable/ic_baseline_5g_24"
+        android:drawableBottom="?attr/actionModeSelectAllDrawable"
         android:fontFamily="@font/miriam_libre"
+        android:onClick="Procesador"
         android:paddingTop="10dp"
         android:paddingBottom="30dp"
         android:text="@string/category_4"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_cat_6"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bar_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bt_cat_3"
         app:layout_constraintTop_toBottomOf="@+id/bt_cat_2" />
+
+
+    <Button
+        android:id="@+id/bt_cat_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/drawable_button"
+        android:backgroundTint="#004D47"
+        android:drawableBottom="@drawable/ic_baseline_live_tv_24"
+        android:fontFamily="@font/miriam_libre"
+        android:onClick="Personales"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp"
+        android:text="@string/category_5"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bar_menu"
+        app:layout_constraintEnd_toStartOf="@id/bt_cat_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cat_3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/bt_cat_6"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginStart="3dp"-->
+    <!--        android:layout_marginTop="3dp"-->
+    <!--        android:layout_marginEnd="3dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:background="@drawable/drawable_button"-->
+    <!--        android:backgroundTint="#004D47"-->
+    <!--        android:drawableBottom="@drawable/ic_baseline_tablet_24"-->
+    <!--        android:fontFamily="@font/miriam_libre"-->
+    <!--        android:paddingTop="10dp"-->
+    <!--        android:paddingBottom="30dp"-->
+    <!--        android:text="@string/category_6"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/tv_bar_menu"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/Pantalla"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/bt_cat_5"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/bt_cat_4"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

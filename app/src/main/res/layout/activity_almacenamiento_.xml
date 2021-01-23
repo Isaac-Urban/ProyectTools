@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@mipmap/textura"
+android:backgroundTintMode="screen"
+tools:context=".CategoryOne_Activity">
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/tv_username_one"
+    />
+
+<TextView
+    android:id="@+id/tv_username_one"
+    android:layout_width="0dp"
+    android:layout_height="25dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="5dp"
+    android:text="@string/usuario"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toTopOf="@id/al_score"
+    app:layout_constraintEnd_toStartOf="@id/tv_maxScore_one"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+<TextView
+    android:id="@+id/tv_maxScore_one"
+    android:layout_width="0dp"
+    android:layout_height="25dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="5dp"
+    android:text="@string/maximo_puntaje"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toTopOf="@+id/tv_vidas_one"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/tv_username_one"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+<TextView
+    android:id="@+id/al_score"
+    android:layout_width="0dp"
+    android:layout_height="25dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="5dp"
+    android:text="@string/puntuacion"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toTopOf="@id/view_top_one"
+    app:layout_constraintEnd_toStartOf="@id/tv_vidas_one"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_username_one" />
+
+<TextView
+    android:id="@+id/tv_vidas_one"
+    android:layout_width="0dp"
+    android:layout_height="25dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:text="@string/vidas"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toTopOf="@id/view_top_one"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/al_score"
+    app:layout_constraintTop_toBottomOf="@id/tv_maxScore_one" />
+
+<TextView
+    android:id="@+id/tv_user_one"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:fontFamily="@font/miriam_libre"
+    android:textColor="#00FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.472"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/rg_answers_one"
+    app:layout_constraintVertical_bias="0.0" />
+
+<Button
+    android:id="@+id/bt_next_one"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="100dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/drawable_button"
+    android:backgroundTint="#263B91"
+    android:fontFamily="@font/miriam_libre"
+    android:iconTint="#000000"
+    android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/rg_answers_one"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:targetApi="o" />
+
+
+    <TextView
+        android:id="@+id/view_top_one"
+        android:layout_width="400dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_quiz_questions_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/view_bottom_one"
+        android:layout_width="400dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@id/rg_answers_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz_questions_one" />
+
+<TextView
+    android:id="@+id/tv_quiz_questions_one"
+    android:layout_width="0dp"
+    android:layout_height="100dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:textAllCaps="false"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="normal"
+    app:layout_constraintBottom_toTopOf="@id/view_bottom_one"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/view_top_one" />
+
+<RadioGroup
+    android:id="@+id/rg_answers_one"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="60dp"
+    android:fontFamily="@font/miriam_libre"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/view_bottom_one">
+
+
+    <RadioButton
+        android:id="@+id/rb_one_a"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_rb_six"
+        android:buttonTint="#F0B106"
+        android:buttonTintMode="src_in"
+        android:fontFamily="@font/miriam_libre"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:id="@+id/rb_two_a"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_rb_seven"
+        android:buttonTint="#F0B106"
+        android:buttonTintMode="src_in"
+        android:fontFamily="@font/miriam_libre"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:id="@+id/rb_three_a"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="@drawable/ic_rb_two"
+        android:buttonTint="#F0B106"
+        android:buttonTintMode="src_in"
+        android:fontFamily="@font/miriam_libre"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+</RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

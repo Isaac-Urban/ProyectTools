@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.proyecttools">
+
     <!-- premiso para que funcione el webview -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Imagenes_Activity"></activity>
+
         <activity
             android:name=".Main_Activity"
             android:screenOrientation="portrait" />
@@ -19,14 +21,25 @@
             android:name=".Cuerpo_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Conceptos_Activity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".CategoryOne_Activity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".Procesador_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Redes_Activity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Almacenamiento_Activity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Imagenes_Activity"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".Web_Activity"
-            android:screenOrientation="portrait" /> <!-- marcamos inicio con el splash -->
+            android:screenOrientation="portrait" />
+
+        <!-- marcamos inicio con el splash -->
         <activity android:name=".Splash_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,13 +12,14 @@
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar"
-        app:layout_constraintBottom_toTopOf="@id/tv_username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_username_two"
+        />
 
     <TextView
-        android:id="@+id/tv_username"
+        android:id="@+id/tv_username_two"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_marginStart="10dp"
@@ -27,13 +29,13 @@
         android:text="@string/usuario"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/tv_score"
-        app:layout_constraintEnd_toStartOf="@id/tv_maxScore"
+        app:layout_constraintBottom_toTopOf="@id/tv_score_two"
+        app:layout_constraintEnd_toStartOf="@id/tv_maxScore_two"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <TextView
-        android:id="@+id/tv_maxScore"
+        android:id="@+id/tv_maxScore_two"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_marginStart="3dp"
@@ -42,28 +44,28 @@
         android:text="@string/maximo_puntaje"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_vidas"
+        app:layout_constraintBottom_toTopOf="@+id/tv_vidas_two"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_username"
+        app:layout_constraintStart_toEndOf="@id/tv_username_two"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
-        android:id="@+id/tv_score"
-        android:layout_width="193dp"
-        android:layout_height="27dp"
+        android:id="@+id/tv_score_two"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="5dp"
         android:text="@string/puntuacion"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/view_top"
-        app:layout_constraintEnd_toStartOf="@id/tv_vidas"
+        app:layout_constraintBottom_toTopOf="@id/view_top_two"
+        app:layout_constraintEnd_toStartOf="@id/tv_vidas_two"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_username" />
+        app:layout_constraintTop_toBottomOf="@id/tv_username_two" />
 
     <TextView
-        android:id="@+id/tv_vidas"
+        android:id="@+id/tv_vidas_two"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_marginStart="3dp"
@@ -72,13 +74,13 @@
         android:text="@string/vidas"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/view_top"
+        app:layout_constraintBottom_toTopOf="@id/view_top_two"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_score"
-        app:layout_constraintTop_toBottomOf="@id/tv_maxScore" />
+        app:layout_constraintStart_toEndOf="@id/tv_score_two"
+        app:layout_constraintTop_toBottomOf="@id/tv_maxScore_two" />
 
     <TextView
-        android:id="@+id/tv_user"
+        android:id="@+id/tv_user_two"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="@font/miriam_libre"
@@ -87,17 +89,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rg_answers"
+        app:layout_constraintTop_toBottomOf="@+id/rg_answers_two"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/bt_next"
+        android:id="@+id/bt_next_two"
         android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="5dp"
         android:background="@drawable/drawable_button"
         android:backgroundTint="#263B91"
         android:fontFamily="@font/miriam_libre"
@@ -105,38 +107,38 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_answers_two"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rg_answers"
         tools:targetApi="o" />
 
 
     <TextView
-        android:id="@+id/view_top"
+        android:id="@+id/view_top_two"
         android:layout_width="400dp"
         android:layout_height="3dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="#263B91"
-        app:layout_constraintBottom_toTopOf="@+id/tv_quiz_questions"
+        android:background="#3E0510"
+        app:layout_constraintBottom_toTopOf="@+id/tv_quiz_questions_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <TextView
-        android:id="@+id/view_bottom"
+        android:id="@+id/view_bottom_two"
         android:layout_width="400dp"
         android:layout_height="3dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
-        android:background="#263B91"
-        app:layout_constraintBottom_toTopOf="@id/rg_answers"
+        android:background="#3E0510"
+        app:layout_constraintBottom_toTopOf="@id/rg_answers_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_quiz_questions" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz_questions_two" />
 
     <TextView
-        android:id="@+id/tv_quiz_questions"
+        android:id="@+id/tv_quiz_questions_two"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginStart="3dp"
@@ -146,14 +148,14 @@
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@id/view_bottom"
+        app:layout_constraintBottom_toTopOf="@id/view_bottom_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_top" />
+        app:layout_constraintTop_toBottomOf="@+id/view_top_two" />
 
     <RadioGroup
-        android:id="@+id/rg_answers"
+        android:id="@+id/rg_answers_two"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
@@ -164,10 +166,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_bottom">
+        app:layout_constraintTop_toBottomOf="@+id/view_bottom_two">
 
         <RadioButton
-            android:id="@+id/rb_one"
+            android:id="@+id/rb_one_r"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginLeft="0.5dp"
@@ -182,14 +184,14 @@
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/rb_two"
+            android:id="@+id/rb_two_r"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginLeft="0.5dp"
             android:layout_marginTop="0.5dp"
             android:layout_marginRight="0.5dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/ic_rb_one"
+            android:background="@drawable/ic_rb_six"
             android:buttonTint="#F0B106"
             android:buttonTintMode="src_in"
             android:fontFamily="@font/miriam_libre"
@@ -197,14 +199,14 @@
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/rb_three"
+            android:id="@+id/rb_three_r"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginLeft="0.5dp"
             android:layout_marginTop="0.5dp"
             android:layout_marginRight="0.5dp"
             android:layout_marginBottom="0.5dp"
-            android:background="@drawable/ic_rb_two"
+            android:background="@drawable/ic_rb_seven"
             android:buttonTint="#F0B106"
             android:buttonTintMode="src_in"
             android:fontFamily="@font/miriam_libre"

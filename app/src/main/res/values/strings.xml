@@ -6,14 +6,13 @@
 
     // body
     <string name="WELCOME">¡BIENVENIDO!</string>
-    <string name="order">¿Qué aprenderás hoy?</string>
     <string name="Add">Añadir</string>
     <string name="Logo">Logo</string>
-    <string name="category_1">Categoria 1</string>
-    <string name="category_2">Categoria 2</string>
-    <string name="category_3">Categoria 3</string>
-    <string name="category_4">Categoria 4</string>
-    <string name="category_5">Categoria 5</string>
+    <string name="category_1">Informática General</string>
+    <string name="category_2">Almacenamiento</string>
+    <string name="category_3">Redes</string>
+    <string name="category_4">Procesadores</string>
+    <string name="category_5">Personales</string>
     <string name="category_6">Categoria 6</string>
 
     // menu
@@ -26,33 +25,215 @@
     <string name="Menú">Menú principal</string>
     <string name="Next">Siguiente</string>
     <string name="Finish">Terminar</string>
-    <string name="prev">Anterior</string>
     <string name="Start_Again">Empezar de nuevo</string>
     <string name="Resultados">Resultados</string>
     <string name="registrar">Registrar</string>
-    <string name="puntuacion">Puntaje = 0/100</string>
-    <string name="maximo_puntaje">MáxPuntaje = </string>
+    <string name="puntuacion">Puntaje = 0 / 50</string>
+    <string name="maximo_puntaje">MáxPuntaje = 0</string>
     <string name="Cancelar">Cancelar</string>
     <string name="Salir">Salir</string>
     <string name="Regresar">Regresar</string>
     <string name="usuario">Usuario:</string>
-    <string name="vidas">Vidas:</string>
+    <string name="vidas">Vidas = 3</string>
+    <string name="Correcto">Correcto</string>
+    <string name="Incorrecto">Incorrecto</string>
+    <string name="Puntaje">Puntaje =</string>
 
 
     // questionary one
-    <array name="questions">
-        <item>¿Cuáles son las partes del procesador?;*Unidad de control, Unidad aritmética lógica y
-            Registros;Memoria RAM, Disco Duro y SSD;Gabinete, Monitor, Teclado
+    <array name="Informatic_questions">
+        <item>¿Qué es la informática?;*Es una ciencia que se encarga de la automatización racional
+            de la información;Ciencia que se encarga de transformar toda la información posible en
+            datos;Área de la computación encarga de realizar la automatización de la información
         </item>
-        <item>¿Qué hace un núcleo?;*Permite realizar mayor cantidad de tareas en una
-            computadora;Guardar datos;Sobreescribir datos
+        <item>¿La informática se divide en...?; Información y electrónica ;*Informacion y
+            computación;Computación y Electrónica
         </item>
-        <item>¿Qué significa SSD?;*Solid State Drive;Hard Drive Disk;Solid Static Disk</item>
-        <item>¿Qué tipo de memoria es la memoria RAM?;*Lectura y escritura;Escritura;Lectura</item>
-        <item>¿Qué significa DDR en las memorias RAM?;Disk Drive Recording;Disk Data
-            Recording;*Double Data Rate
+        <item>¿Qué es un dato?;*Conjunto de caracteres que por si mismos no significan nada, no dan
+            un significado útil;Conjunto de números que por sí mismos tienen un significado;Conjunto
+            de números que tienen un significado útil
         </item>
+        <item>¿Qué es la información?;Tratamiento que se le da a los carácteres para usarlos en la
+            toma de decisiones;El conjunto de datos englobados en un texto ;*Es el tratamiento que
+            se le da a los datos. Tiene un significado útil
+        </item>
+        <item>¿Qué es un sistema?;*Conjunto de partes o elementos relacionados entre sí para
+            resolver un problema u objetivo;Conjunto de información que es utilizada para resolver
+            un sistema;Conjunto de elementos que se utilizan para desarrollar programas
+        </item>
+        <item>¿Qué sistema de información?;Herramientas que procesan la información para utilizarla
+            en la resolución de problemas;Conjunto de sistemas que se relacionan entre sí;*Conjunto
+            de herramientas relaciona-\ndas entre sí para recopilar, almacenar y procesar datos e
+            información
+        </item>
+        <item>¿Qué es una base de datos?;Conjunto de números que se utilizan en los
+            programas;*Conjunto de datos almacenados que se relacionan entre sí;Información que se
+            utiliza para la toma de decisiones
+        </item>
+        <item>¿Qué significa SGBD?;Solución de Gestiones Benefactoras de Datos ; Sistema Gestionado
+            por Bases de Datos;*Sistema Gestor de Base de Datos
+        </item>
+        <item>¿Cómo se representan los datos en la computadora?;*Con ausencia y presencia de pulsos
+            electromagnéticos;Mediante la representación de valores binarios;Con ayuda de bajones de
+            electricidad y digitos binarios
+        </item>
+        <item>¿Qué son datos estructurados?;Correos, vídeos, archivos, hojas de cálculo;Imágenes,
+            audio, datos que no pueden ordenarse;*Datos que pueden ordenarse y procesarse
+        </item>
+        <item>¿Cuáles son datos NO estructurados?;Datos que pueden ordenarse y procesarse;*Correos,
+            videos, archivos Word – pdf, hojas de calculo, imágenes digitales, audio;Información en
+            blogs y redes sociales
+        </item>
+        <item>¿Qué es Big Data?;*Conjunto de datos estructurados y no estructurados que se requieren
+            manejar;Cuando almacenas muchos datos;Un conjunto de archivos muy pesados
+        </item>
+        <item>¿Qué es el hardware?;Conjunto de programas de una computadora;*Parte física o tangible
+            de un equipo de cómputo;Las dos anteriores
+        </item>
+        <item>¿Qué es el software?;Parte física o tangible de un equipo de cómputo;La capacidad de
+            memoria de un equipo de cómputo;*Se refiere a aplicaciones, scripts y programas que se
+            ejecutan en un dispositivo inteligente
+        </item>
+        <item>¿Qué es un dispositivo de salida?;*Dispositivos que muestran al usuario la información
+            procesada por la computadora;Dispositivo que permite ingresar datos dentro de la
+            computadora para que sean procesados;Las dos anteriores
+        </item>
+        <item>¿Qué es un dispositivo de entrada?;*Dispositivo que permite ingresar datos dentro de
+            la computadora para que sean procesados;Dispositivo que permite visualizar datos;Aparato
+            que parmite almacenar datos en la computadora
+        </item>
+        <item>¿Qué es un bit?;*Binary Digit. Unidad mínima de información, representado con un 0 o
+            1;Un dispositivo de almacenamiento;Conjunto de
+            datos binarios
+        </item>
+        <item>¿Qué es un Byte;Unidad de medición de datos que contiene seis bits;Unidad de medición
+            de datos que contiene cuatro bits;*Unidad de medición de datos que contiene ocho bits
+        </item>
+        <item>¿Cuánto equivale 1 Byte en bits?;*8 bits;6 bits;4 bits</item>
+        <item>¿Cuántos dígitos representan un carácter?;Seis dígitos representan un carácter,
+            000001;*Ocho dígitos representan un carácter, 00000001;Cuatro dígitos representan un
+            carácter, 0101
+        </item>
+        <item>¿Que significa CISC?;*Una arquitectura de computadora, Complex Instruction Set
+            Computer;Una función lógica de computadora;Una arquitectura de computadora, Reduced
+            Instruction Set Computer
+        </item>
+        <item>¿Que es RISC?;Una marca de computadora;Una arquitectura de computadora, Complex
+            Instruction Set Computer;*Una arquitectura de computadora, Reduced Instruction Set
+            Computer
+        </item>
+        <item>Principales diferencias entre CISC y RISC;Forma en que realizan las operaciones y cómo
+            almacenan datos;*Cantidad de instrucciones, velocidad de procesamiento y la cantidad de
+            circuitos integrados;Cantidad de circuitos integrados y cómo realizan operaciones
+        </item>
+        <item>¿Qué enuncia la ley de Moore?;*Aproximadamente cada dos años se duplicará el número de
+            transistores en un microprocesador;Aproximadamente cada cinco años se triplicará el
+            número de transistores en un microprocesador;Ninguna de las anteriores
+        </item>
+        <!--        <item>¿Qué es un circuito integrado?; ; ;</item>
+        <item>¿Durante que década surgieron los circuitos integrados?;1980;1950;*1960</item>
+        <item>¿Qué es un microprocesador?; </item>
+        <item>¿Qué es un microcontrolador?;</item>
+        <item>¿Cuál es la diferencia entre microcontrolador y microprocesador?; </item>-->
+        <item>¿Qué significa CPU?;*Central Processing Unit;Central Professional Unit;Control
+            Processing Unit
+        </item>
+        <item>¿Qué significa ALU?;Atmel Logic Unit;*Arithmetic Logic Unit;Arithmetic Luminosity
+            Unit
+        </item>
+        <item>¿Qué hace la ALU?;Indica a donde debe ir la información en la computadora;Realiza el
+            procesamiento de información en la computadora;*Realiza operaciones aritméticas y
+            lógicas en la computadora
+        </item>
+        <item>¿Qué significa WWW?;World Work Web;Win Work Web;*World Wide Web</item>
     </array>
 
+    <array name="Almacenamiento_questions">
+        <item>¿Cuál es la función de una memoria?;*Guardar datos para usarlos en otro
+            momento;Representar datos en la computadora;Reproducir audios
+        </item>
+        <item>¿Qué significa SSD?;Static State Drive;Hard State Drive;*Solid State Drive</item>
+        <item>¿Qué significa HDD?;Hard Dominion Disk;*Hard Drive Disk;Hire Drive Disk</item>
+        <item>¿Qué significa RAM?;*Random Access Memory;Remote Access Multimedia;Remote Access
+            Memory
+        </item>
+        <item>¿Qué tipo de memoria es la memoria RAM?;Escritura;Lectura;*Lectura y escritura</item>
+        <item>¿Que significa ROM?;Remote Access Multimedia;*Random Only Memory;Random online
+            Memory
+        </item>
+        <item>Significado de VRAM;*Video Random Acces Memory;Video Remote Acces Memory;Video Random
+            Aleatory Memory
+        </item>
+        <item>¿Qué significa DDR en las memorias RAM?;Disk Data Recording;Disk Drive
+            Recording;*Double Data Rate;
+        </item>
+        <item>¿Cuántos Gb de RAM soporta la arquitectura de 32 bits?;*4 Gb;6 Gb;2 Gb</item>
+    </array>
+
+    <array name="Redes_questions">
+        <item>¿Qué es una red?;*Conjunto de equipos conectados entre sí para compartir recursos;La
+            conexión bluetooth e internet;Cuando un equipo se conecta a internet
+        </item>
+        <item>¿En qué año surge el internet?;1982;1980;*1981</item>
+        <item>¿Cómo se dividen los equipos conectados a una red?;*Los que gestionan y los que
+            acceden a la red;Los que gestionan y los que administran;Solo los que administran
+        </item>
+        <item>Los dispositivos pueden gestionar y acceder a una red a la vez?;*Sí pueden, se
+            denomina P2P;No pueden; Unicamente acceder
+        </item>
+        <item>¿Qué significa P2P?;End to End (de extremo a extremo);Peer-to-Point(de igual a
+            punto);*Peer-to-Peer (de igual a igual)
+        </item>
+        <item>¿A qué se refiere el P2P?;*A que una serie de nodos en una red se comportan como
+            iguales entre sí;Cuando una serie de nodos que se comportan distinto en cada
+            extrema;Ninguna de las anteriores
+        </item>
+        <!--        <item>¿Qué es un protocolo de comunicaciones?;</item>-->
+        <item>¿Qué significa IP?;Internet Problem;*Internet Protocol;Internet Provider</item>
+        <item>¿Qué es un ISP?;*Internet Service Provider;Internal Service Problem;Internal Sistem
+            Problem
+        </item>
+        <item>¿Qué significa TCP?;Transmission Control Module;*Transmission Control
+            Protocol;Transmission Capacities
+        </item>
+        <item>¿Qué significa HTTP?;*Hypertext Transfer Protocol;Hypertext Protocol;Hypertext
+            Technical Provider
+        </item>
+        <!--        <item>¿Qué significa DNS?;</item>-->
+        <!--        <item>¿Qué es un DNS?;*Protocolo de internet que traduce nombres de dominio a direcciones IP;</item>-->
+        <!--        <item>¿Qué significa PPP?;</item>-->
+        <!--        <item>¿Qué significa PPPoE?;</item>-->
+        <!--        <item>¿Qué es un modem?;</item>-->
+        <!--        <item>¿Qué es un switch?;</item>-->
+        <!--        <item>¿Qué es un router?;</item>-->
+        <!--        <item>¿Qué significa LAN?;</item>-->
+        <!--        <item>¿Qué significa WAN?;</item>-->
+        <!--        <item></item>-->
+        <!--        <item></item>-->
+        <!--        <item></item>-->
+        <!--        <item></item>-->
+    </array>
+
+    <array name="Procesador_question">
+        <item>Son partes del procesador;*Unidad de control, Unidad aritmética lógica y
+            Registros;Memoria RAM, Disco Duro y SSD;Mouse, Gabinete y Monitor
+        </item>
+        <item>¿Qué hace un núcleo?;Realiza operaciones lógicas y aritméticas;Procesa datos en la
+            computadora;*Permite realizar mayor cantidad de tareas en una computadora
+        </item>
+        <!--        <item>¿Qué son los direccionamientos?;*Una manera de especificar un operando dentro de una instrucción;Una </item>-->
+        <!--        <item>¿Qué son los registros?;</item>-->
+        <item>¿Que significa PC (en esta área)?;*Program Counter;Personal Computer;Personal
+            Counter
+        </item>
+        <item>¿Qué es un lenguaje de programación?;Una forma de escribir en la
+            computadora;*Secuencia de acciones o pasos ordenados para resolver un problema en una
+            computadora;Lo que da lugar a la programación
+        </item>
+        <item>¿Cuándo surgieron las tarjetas perforadas?;1800;1729;*1725</item>
+        <item>¿Cuál fue el primer lenguaje de programación?;*FORTRAN;JAVA;C++</item>
+        <!--        <item></item>-->
+        <!--        <item></item>-->
+    </array>
 
 </resources>
