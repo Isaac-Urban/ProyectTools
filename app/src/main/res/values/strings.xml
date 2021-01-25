@@ -28,7 +28,7 @@
     <string name="Start_Again">Empezar de nuevo</string>
     <string name="Resultados">Resultados</string>
     <string name="registrar">Registrar</string>
-    <string name="puntuacion">Puntaje = 0 / 50</string>
+    <string name="puntuacion">Puntaje = 0 / 25</string>
     <string name="maximo_puntaje">MáxPuntaje = 0</string>
     <string name="Cancelar">Cancelar</string>
     <string name="Salir">Salir</string>
@@ -40,7 +40,7 @@
     <string name="Puntaje">Puntaje =</string>
 
 
-    // questionary one
+TODO: Preguntas de Informatica
     <array name="Informatic_questions">
         <item>¿Qué es la informática?;*Es una ciencia que se encarga de la automatización racional
             de la información;Ciencia que se encarga de transformar toda la información posible en
@@ -50,7 +50,7 @@
             computación;Computación y Electrónica
         </item>
         <item>¿Qué es un dato?;*Conjunto de caracteres que por si mismos no significan nada, no dan
-            un significado útil;Conjunto de números que por sí mismos tienen un significado;Conjunto
+            un significado útil;Conjunto de números que por sí mismos tienen\nun significado;Conjunto
             de números que tienen un significado útil
         </item>
         <item>¿Qué es la información?;Tratamiento que se le da a los carácteres para usarlos en la
@@ -63,7 +63,7 @@
         </item>
         <item>¿Qué sistema de información?;Herramientas que procesan la información para utilizarla
             en la resolución de problemas;Conjunto de sistemas que se relacionan entre sí;*Conjunto
-            de herramientas relaciona-\ndas entre sí para recopilar, almacenar y procesar datos e
+            de herramientas relacionadas entre\n sí para recopilar, almacenar y procesar datos e
             información
         </item>
         <item>¿Qué es una base de datos?;Conjunto de números que se utilizan en los
@@ -91,14 +91,14 @@
             de un equipo de cómputo;Las dos anteriores
         </item>
         <item>¿Qué es el software?;Parte física o tangible de un equipo de cómputo;La capacidad de
-            memoria de un equipo de cómputo;*Se refiere a aplicaciones, scripts y programas que se
+            memoria de un equipo de cómputo;*Se refiere a aplicaciones, scripts y programas\nque se
             ejecutan en un dispositivo inteligente
         </item>
         <item>¿Qué es un dispositivo de salida?;*Dispositivos que muestran al usuario la información
-            procesada por la computadora;Dispositivo que permite ingresar datos dentro de la
+            procesada por la computadora;Dispositivo que permite ingresar datos dentro\nde la
             computadora para que sean procesados;Las dos anteriores
         </item>
-        <item>¿Qué es un dispositivo de entrada?;*Dispositivo que permite ingresar datos dentro de
+        <item>¿Qué es un dispositivo de entrada?;*Dispositivo que permite ingresar datos dentro\nde
             la computadora para que sean procesados;Dispositivo que permite visualizar datos;Aparato
             que parmite almacenar datos en la computadora
         </item>
@@ -124,17 +124,18 @@
         </item>
         <item>Principales diferencias entre CISC y RISC;Forma en que realizan las operaciones y cómo
             almacenan datos;*Cantidad de instrucciones, velocidad de procesamiento y la cantidad de
-            circuitos integrados;Cantidad de circuitos integrados y cómo realizan operaciones
+            circuitos integrados;Cantidad de circuitos integrados y cómo\nrealizan operaciones
         </item>
         <item>¿Qué enuncia la ley de Moore?;*Aproximadamente cada dos años se duplicará el número de
-            transistores en un microprocesador;Aproximadamente cada cinco años se triplicará el
+            transistores en un microprocesador;Aproximadamente cada cinco años se triplicará\nel
             número de transistores en un microprocesador;Ninguna de las anteriores
         </item>
-        <!--        <item>¿Qué es un circuito integrado?; ; ;</item>
         <item>¿Durante que década surgieron los circuitos integrados?;1980;1950;*1960</item>
-        <item>¿Qué es un microprocesador?; </item>
-        <item>¿Qué es un microcontrolador?;</item>
-        <item>¿Cuál es la diferencia entre microcontrolador y microprocesador?; </item>-->
+        <item>¿Qué es un circuito integrado?;Un objeto en donde se representa un sistema de cómputo;*Objeto de material sólido en donde se graban\nuna serie de componentes electrónicos y sus interconexiones;Ninguna de las anteriores</item>
+
+<!--        <item>¿Qué es un microprocesador?; </item>-->
+<!--        <item>¿Qué es un microcontrolador?;</item>-->
+<!--        <item>¿Cuál es la diferencia entre microcontrolador y microprocesador?; </item>&ndash;&gt;-->
         <item>¿Qué significa CPU?;*Central Processing Unit;Central Professional Unit;Control
             Processing Unit
         </item>
@@ -148,19 +149,38 @@
         <item>¿Qué significa WWW?;World Work Web;Win Work Web;*World Wide Web</item>
     </array>
 
+
+TODO: Preguntas almacenamiento
     <array name="Almacenamiento_questions">
         <item>¿Cuál es la función de una memoria?;*Guardar datos para usarlos en otro
             momento;Representar datos en la computadora;Reproducir audios
         </item>
+        <item>¿A qué se refiere el término Capacidad?;*Es una forma de especificar cuántos bits se pueden almacenar en un dispositivo de memoria;Es una forma de específicar cuantas operaciones se pueden realizar en memoria;Es una forma de específicar qué se puede hacer</item>
+        <item>¿Qué significa kB y cuántos bytes lo conforman?;Kinnerbyte, lo conforman 1024 bytes;*Kilobyte, lo conforman 1024 bytes;Kilobyte, lo conforman 1024 Megabytes</item>
+        <item>¿Qué significa MB y cuántos bytes lo conforman?;*Megabyte, lo conforman 1024 Kilobytes;Megabyte, lo conforman 1024 bytes;Megabyte, lo conforman 1000 Kilobytes</item>
+        <item>¿Qué significa DRAM?;*Dinamic Random Acces Memory;Double Random Access Memory;Data Random Access Memory</item>
+        <item>¿Qué significa GB y cuántos bytes lo conforman?;Gigabyte, lo conforman 1024 Gigabytes;*Gigabyte, lo conforman 1024 Megabytes;Gigabyte, lo conforman 1024 Kilobytes</item>
+        <item>¿Qué significa TB y cuántos bytes lo conforman?;Terabyte, lo conforman 1024 Kilobytes;Terabyte, lo conforman 1004 Megabytes;*Terabyte, lo conforman 1024 Gigabytes</item>
         <item>¿Qué significa SSD?;Static State Drive;Hard State Drive;*Solid State Drive</item>
         <item>¿Qué significa HDD?;Hard Dominion Disk;*Hard Drive Disk;Hire Drive Disk</item>
+        <item>¿Qué significa que una memoria es vólatil?;*Que la información almacenada en ella desaparece cuando apagamos el PC;Que la información almacenada en ella se mantiene aunque apaguemos el PC;Ninguna de las anteriores</item>
+        <item>¿Qué significa que una memoria NO es vólatil?;Que la información almacenada en ella desaparece cuando apagamos el PC;*Que la información almacenada en ella se mantiene aunque apaguemos el PC;Ninguna de las anteriores</item>
         <item>¿Qué significa RAM?;*Random Access Memory;Remote Access Multimedia;Remote Access
             Memory
         </item>
-        <item>¿Qué tipo de memoria es la memoria RAM?;Escritura;Lectura;*Lectura y escritura</item>
+        <item>La memoria RAM puede...;Escribir datos;Leer datos;*Leer y escribir datos</item>
+        <item>¿Qué tipo de memoria es la memoria RAM?;*Vólatil;No vólatil;Ninguna de las anteriores</item>
+        <item>¿Para qué sirve la RAM?;*Para almacenar los programas y datos que se están utilizando y acceder a ellos de manera inmediata;Para almacenar los datos e información que requiera el sistema;Para Para leer los datos que se introducen a la computadora;</item>
         <item>¿Que significa ROM?;Remote Access Multimedia;*Random Only Memory;Random online
             Memory
         </item>
+        <item>La memoria ROM puede...;Escribir datos;*Leer datos;Leer y escribir datos</item>
+        <item>¿Qué tipo de memoria es la memoria ROM?;Vólatil;*No vólatil;Ninguna de las anteriores</item>
+        <item>El disco HDD Y EL SSD son memorias...;Vólatiles;*No vólatiles;Ambas</item>
+        <item>¿Qué significa SRAM?;*Static Random Access Memory;Solid Random Access Memory;Static Random Aleatory Memory</item>
+        <item>¿Qué hace la memoria caché?;Guardar instrucciones que usas de manera frecuente de manera temporal;Escribir datos a la memoria principal del PC; Dar soporte a las demás memorias</item>
+        <item>¿Cuántos niveles tiene la memoria caché?;*Tres, L1, L2, L3;Dos, L1, L2;Únicamente un nivel, L1</item>
+        <item>¿Qué tipos de memoria caché hay?;*Tres, caché de disco, de pista y web;Dos, caché de disco y de pista;Tres, caché de disco, web y programa</item>
         <item>Significado de VRAM;*Video Random Acces Memory;Video Remote Acces Memory;Video Random
             Aleatory Memory
         </item>
@@ -168,12 +188,18 @@
             Recording;*Double Data Rate;
         </item>
         <item>¿Cuántos Gb de RAM soporta la arquitectura de 32 bits?;*4 Gb;6 Gb;2 Gb</item>
+<!--        <item></item>-->
+<!--        <item></item>-->
+<!--        <item></item>-->
     </array>
 
+
+TODO: Preguntas de redes
     <array name="Redes_questions">
         <item>¿Qué es una red?;*Conjunto de equipos conectados entre sí para compartir recursos;La
             conexión bluetooth e internet;Cuando un equipo se conecta a internet
         </item>
+
         <item>¿En qué año surge el internet?;1982;1980;*1981</item>
         <item>¿Cómo se dividen los equipos conectados a una red?;*Los que gestionan y los que
             acceden a la red;Los que gestionan y los que administran;Solo los que administran
@@ -184,56 +210,81 @@
         <item>¿Qué significa P2P?;End to End (de extremo a extremo);Peer-to-Point(de igual a
             punto);*Peer-to-Peer (de igual a igual)
         </item>
-        <item>¿A qué se refiere el P2P?;*A que una serie de nodos en una red se comportan como
+        <item>¿A qué se refiere el P2P?;*A que una serie de nodos en una red se\ncomportan como
             iguales entre sí;Cuando una serie de nodos que se comportan distinto en cada
             extrema;Ninguna de las anteriores
         </item>
-        <!--        <item>¿Qué es un protocolo de comunicaciones?;</item>-->
-        <item>¿Qué significa IP?;Internet Problem;*Internet Protocol;Internet Provider</item>
-        <item>¿Qué es un ISP?;*Internet Service Provider;Internal Service Problem;Internal Sistem
-            Problem
-        </item>
-        <item>¿Qué significa TCP?;Transmission Control Module;*Transmission Control
-            Protocol;Transmission Capacities
-        </item>
+        <item>Las reglas que definen las transmisiones de datos\nse deneminan;Lineaminetos;*Protocolos;Políticas</item>
+        <item>¿Qué es un protocolo de comunicaciones?;*Una descripcion formal de reglas y formatos de mensajes digitales;El conjunto de reglas que rigen el internet;Especifican como se deben manejar los formatos de transmisión de datos en la web</item>
+        <item>¿Qué significa FTP?;File Transfer Personal\n(Transferencia de archivos personal);File Technical Protocol\n(Protocolo técnico de archivos);*File Transfer Protocol\n(Protocolo de transferencia de archivos)</item>
+        <item>¿Qué significa IP?;Internet Problem\n(Problema de Internet);*Internet Protocol\n(protocolo de Internet);Internet Provider\n(Proveedor de Internet)</item>
+        <item>¿Qué es un ISP?;*Internet Service Provider\n(Proveedor de servicios de Internet);Internal Service Problem\n(Problema de servicio interno);Internal System Problem\n(Problema interno del sistema)</item>
+        <item>¿Qué significa TCP?;Transmission Control Module\n(Módulo de control de transmisión);*Transmission Control Protocol\n(Protocolo de Control de Transmisión);Transmission Capacities\n(Capacidades de transmisión)</item>
         <item>¿Qué significa HTTP?;*Hypertext Transfer Protocol;Hypertext Protocol;Hypertext
             Technical Provider
         </item>
-        <!--        <item>¿Qué significa DNS?;</item>-->
-        <!--        <item>¿Qué es un DNS?;*Protocolo de internet que traduce nombres de dominio a direcciones IP;</item>-->
-        <!--        <item>¿Qué significa PPP?;</item>-->
-        <!--        <item>¿Qué significa PPPoE?;</item>-->
-        <!--        <item>¿Qué es un modem?;</item>-->
+        <item>¿Cómo se mide la velocidad de transmisión de datos?;En Bytes por Segundo (Bbps);En bits por Segundo (bps);*En megabits por Segundo (Mbps)</item>
+        <item>¿Qué es ethernet?;*Forma estándar de conectar computadoras en\nuna red a través de cable;Una forma estándar de conectarse a la red mediante WIFI;Un tipo de cable para conectar periféricos</item>
+        <item>¿En qué se diferencian las categorías de los cables ethernet?;*En la velocidad y en la frecuencia de transmisión;En la velocidad y en el tamaño;En la frecuencia de transmisíon</item>
+        <item>Son categorías de un cable de ethernet...;3, 4e, 9e;*5, 5e, 6e, 6a;2w, 4b, 6b</item>
+        <item>Ventajas del ethernet;*Mayor estabilidad y velocidad de transferencia\nde datos;*Mayor rango de transmisión de datos, fácil instalación;No tiene ventajas</item>
+        <item>¿Qué es WIFI?;La conexión de conexiones entre dispositivos inteligentes;Una tecnología que permite la conexión alambrica entre dispositivos inteligentes;*Una tecnología que permite la interconexión inalámbrica de dispositivos inteligentes</item>
+        <item>¿Qué significa DNS?;*Domain Name System\n(sistema de nombres de dominio);Domain Name Service\n(Servicio de nombres de dominio);Domain Network Service\n(Servicio de red de dominio)</item>
+        <item>¿Qué es un DNS?;*Protocolo de internet que traduce nombres de dominio a direcciones IP;Un protocolo que ayuda a que la transmición de archivos sea mejor;Ninguna de las anteriores</item>
+        <item>¿Qué significa PPP?;Point-to-Point Procediment\n(Procedimiento punto a punto);Point-to-Point Price\n(Precio punto a punto);*Point-to-Point Protocol\n(Protocolo punto a punto)</item>
+        <item>¿Qué significa PPPoE?;*Point-to-Point Protocol over Ethernet;Point-to-Point Procediment over Ethernet;Point-to-Point Procediment over Engineer</item>
+        <item>¿Qué es un modem?;Un componente que conecta dispositivos de manera local;*Un componente que permite que un dispositivo inteligente se conecte a internet;Un componente que almacena datos digitales</item>
         <!--        <item>¿Qué es un switch?;</item>-->
         <!--        <item>¿Qué es un router?;</item>-->
-        <!--        <item>¿Qué significa LAN?;</item>-->
-        <!--        <item>¿Qué significa WAN?;</item>-->
-        <!--        <item></item>-->
-        <!--        <item></item>-->
-        <!--        <item></item>-->
-        <!--        <item></item>-->
+        <item>¿Qué significa LAN?;*Local Area Network;Localizable Area Network;Local Antenna Network</item>
+        <item>¿Qué significa WAN?;Wearable Area Network;*Wide Area Network;Wide Area Normal</item>
     </array>
 
+
+    TODO: Preguntas de procesador
     <array name="Procesador_question">
-        <item>Son partes del procesador;*Unidad de control, Unidad aritmética lógica y
-            Registros;Memoria RAM, Disco Duro y SSD;Mouse, Gabinete y Monitor
+        <item>Es el cerebro de la computadora;*CPU (Unidad Central de Procesamiento);PC (computadora);CCU (Unidad de Control Central)</item>
+        <item>¿La CPU contiene un pequeño chip\nllamado microprocesador?;*Cierto;Falso;No lo sé</item>
+        <item>Son partes del procesador;*Unidad de control, Unidad aritmética lógica y registros;Memoria RAM, Disco Duro y SSD;Mouse, Gabinete y Monitor
         </item>
+        <item>¿Qué hace la Unidad de Control?;Administra los recursos de la computadora y realiza operaciones lógicas;*Se encarga de dirigir el flujo de datos y administrar recursos;Realiza operaciones lógicas</item>
+        <item>¿Qué engloba un conjunto de instrucciones?;Engloba los recursos de la computadora;Engloba las características de la computadora;*Engloba todas las operaciones que una CPU puede realizar</item>
+        <item>¿Los datos almacenados en una computadora\nson de tipo numérico?;*Cierto;Falso;No, en palabras</item>
+        <item>¿Qué significa ALU?;Atmel Logic Unit;*Arithmetic Logic Unit;Arithmetic Luminosity
+            Unit
+        </item>
+        <item>¿Qué hace la ALU?;Indica a donde debe ir la información en la computadora;Realiza el
+            procesamiento de información en la computadora;*Realiza operaciones aritméticas y
+            lógicas en la computadora
+        </item>
+        <item>La unidad lógica aritmética incluye un grupo de...;Control;*Registros;Datos</item>
+        <item>Son tipos de registros:;*Propósito general, de segmento de memoria y de instrucciones;Propósito específico y propósito especial;Propósito general, de instrucciones y propósito númerico</item>
+        <item>¿A qué se refiere la palabra bus?;Se refiere a la velocidad de los datos;Se refiere a la trasmisión de datos;*Se refiere a las rutas entre los componentes de una computadora</item>
+        <item>Son tipos de buses;Bus de datos, Bus de control y Bus de dimensiones;*Bus de datos, Bus de control y Bus de direcciones;Bus de datos, Bus de transmisión y Bus de direcciones</item>
+        <item>A la forma en la que se coordinan los\neventos en el bus, se le llama;Adaptación;*Temporización;Control</item>
+        <item>Los buses utilizan temporización...;*Síncrona o asíncrona;Síncrona;Asíncrona</item>
         <item>¿Qué hace un núcleo?;Realiza operaciones lógicas y aritméticas;Procesa datos en la
-            computadora;*Permite realizar mayor cantidad de tareas en una computadora
+            computadora;*Permite realizar mayor cantidad de tareas\nen una computadora
         </item>
         <!--        <item>¿Qué son los direccionamientos?;*Una manera de especificar un operando dentro de una instrucción;Una </item>-->
         <!--        <item>¿Qué son los registros?;</item>-->
         <item>¿Que significa PC (en esta área)?;*Program Counter;Personal Computer;Personal
             Counter
         </item>
+        <item>¿Toda computadora contiene un reloj del sistema?;*Cierto;Falso;No, porque no lo necesita</item>
+        <item>¿Qué es una Celda de memoria?;Un dispositivo o circuito eléctrico usando para almacenar palabras;Un dispositivo o circuito eléctrico usando para almacenar datos;*Un dispositivo o circuito eléctrico usando para almacenar un solo bit (0 o 1).</item>
+        <item>¿A qué se refiere el término Palabra de memoria?;Un grupo de bits (celdas) en una memoria que representa información de algún tipo.;*Un grupo de bits (celdas) en una memoria que representa datos de algún tipo;Un grupo de megabytes (celdas) en una memoria que representa datos de algún tipo.</item>
+        <item>Memoria usada para compensar una diferencia\n de velocidad en el flujo de datos:;*Buffer;Memoria flash;Memoria caché</item>
+        <item>¿En qué sistema se encuentra la información en la computadora?;Sistema decimal;Sistema octal;*Sistema binario</item>
         <item>¿Qué es un lenguaje de programación?;Una forma de escribir en la
             computadora;*Secuencia de acciones o pasos ordenados para resolver un problema en una
             computadora;Lo que da lugar a la programación
         </item>
+        <item>¿Qué es un circuito integrado?;Un objeto en donde se representa un sistema;*Objeto de material sólido en donde se graban\nuna serie de componentes electrónicos y sus interconexiones;Ninguna de las anteriores</item>
+        <item>Son ejemplos de circuitos integrados;*Microprocesadores y microcontroladores;Microprocesadores y memorias;Microcontroladores y celdas de memoria</item>
+        <item>¿Bajo qué lenguaje se programan los circuitos integrados?;*Lenguaje ensamblador;Lenguaje C++;Lenguaje PHP</item>
         <item>¿Cuándo surgieron las tarjetas perforadas?;1800;1729;*1725</item>
         <item>¿Cuál fue el primer lenguaje de programación?;*FORTRAN;JAVA;C++</item>
-        <!--        <item></item>-->
-        <!--        <item></item>-->
     </array>
 
 </resources>

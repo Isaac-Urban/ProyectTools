@@ -23,15 +23,21 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/bt_overflow"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/ic_baseline_home_24"
-        android:backgroundTint="#FFFFFF"
-        android:gravity="end"
-        android:onClick="Overflow" />
+        android:id="@+id/Tv_tool_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/bt_overflow"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:background="@drawable/ic_baseline_home_24"-->
+<!--        android:backgroundTint="#FFFFFF"-->
+<!--        android:gravity="end"-->
+<!--        android:onClick="Overflow" />-->
 
 
 </androidx.appcompat.widget.Toolbar>

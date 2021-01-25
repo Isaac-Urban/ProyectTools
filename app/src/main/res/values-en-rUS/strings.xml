@@ -2,7 +2,6 @@
 <resources>
     <string name="user_name">Enter a username!</string>
     <string name="button1">Let\'s go!</string>
-    <string name="order">What will you learn today?</string>
     <string name="Home">Home</string>
     <string name="Love">"Follow us "</string>
     <string name="Add">Add</string>
@@ -17,7 +16,6 @@
     <string name="Menú">Main Menu</string>
     <string name="Next">Next</string>
     <string name="Finish">Finish</string>
-    <string name="prev">Previous</string>
     <string name="Start_Again">Start Again</string>
     <string name="Resultados">Results</string>
     <string name="todo">EVERYTHING</string>
@@ -30,4 +28,7 @@
     <string name="Regresar">Back</string>
     <string name="usuario">"Username: "</string>
     <string name="vidas">"Lives: "</string>
+    <string name="Correcto">Great</string>
+    <string name="Incorrecto">Bad</string>
+    <string name="Puntaje">Incorrect</string>
 </resources>

@@ -24,6 +24,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 //import android.widget.Spinner;
 //import android.widget.TextView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Main_Activity extends AppCompatActivity {
@@ -40,6 +41,8 @@ public class Main_Activity extends AppCompatActivity {
 //metodo para guardar valores de usuario
         SharedPreferences Save_nombre = getSharedPreferences("datos", Context.MODE_PRIVATE);           //linea para recuperar lo que esta guardado
         et1.setText(Save_nombre.getString("name", ""));                                         //lo que se haya encontrado debe colocarse aquí
+
+
 
     }
 
@@ -77,6 +80,8 @@ public class Main_Activity extends AppCompatActivity {
             }
             }
     }
+
+
 
     @Override
     public void onBackPressed() {

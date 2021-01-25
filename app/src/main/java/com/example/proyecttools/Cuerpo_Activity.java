@@ -21,10 +21,12 @@ public class Cuerpo_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_cuerpo);
 
 //        parte donde indicamos que ya aparezca el id_user
-        //tv_greeting = findViewById(R.id.tv_barra);
-        tv_memory = findViewById(R.id.tv_memory_user);
+
+        tv_memory = findViewById(R.id.Tv_tool_user);
         String id_user = getIntent().getStringExtra("username");                                 //alojamos nombre usuario gracias a la key
         tv_memory.setText(id_user);                                                                   //indicamos el lugar en dónde ponemos el texto
+//Lo de la barra
+
 
     }
 
@@ -64,13 +66,6 @@ public class Cuerpo_Activity extends AppCompatActivity {
     public void Web(View view) {
         Intent web = new Intent(this, Web_Activity.class);
         startActivity(web);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-    }
-
-    public void Overflow(View view) {
-        Intent cuerpo = new Intent(this, Cuerpo_Activity.class);
-        cuerpo.putExtra("username", tv_memory.getText().toString());                                 // aqui pasamos el id_user a la otra activity
-        startActivity(cuerpo);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
     }
 

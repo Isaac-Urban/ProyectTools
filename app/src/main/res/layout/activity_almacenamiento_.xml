@@ -79,18 +79,6 @@ tools:context=".CategoryOne_Activity">
     app:layout_constraintStart_toEndOf="@id/al_score"
     app:layout_constraintTop_toBottomOf="@id/tv_maxScore_one" />
 
-<TextView
-    android:id="@+id/tv_user_one"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    android:fontFamily="@font/miriam_libre"
-    android:textColor="#00FFFFFF"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.472"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/rg_answers_one"
-    app:layout_constraintVertical_bias="0.0" />
 
 <Button
     android:id="@+id/bt_next_one"

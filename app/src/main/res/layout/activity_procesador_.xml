@@ -79,18 +79,6 @@
         app:layout_constraintStart_toEndOf="@id/tv_score_three"
         app:layout_constraintTop_toBottomOf="@id/tv_maxScore_three" />
 
-    <TextView
-        android:id="@+id/tv_user_three"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fontFamily="@font/miriam_libre"
-        android:textColor="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rg_answers_three"
-        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/bt_next_three"
@@ -177,7 +165,7 @@
             android:layout_marginRight="0.5dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/ic_rb_four"
-            android:buttonTint="#F0B106"
+            android:buttonTint="#000000"
             android:buttonTintMode="src_in"
             android:fontFamily="@font/miriam_libre"
             android:textColor="#FFFFFF"
@@ -192,7 +180,7 @@
             android:layout_marginRight="0.5dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/ic_rb_five"
-            android:buttonTint="#F0B106"
+            android:buttonTint="#000000"
             android:buttonTintMode="src_in"
             android:fontFamily="@font/miriam_libre"
             android:textColor="#FFFFFF"
@@ -207,7 +195,7 @@
             android:layout_marginRight="0.5dp"
             android:layout_marginBottom="0.5dp"
             android:background="@drawable/ic_rb_seven"
-            android:buttonTint="#F0B106"
+            android:buttonTint="#000000"
             android:buttonTintMode="src_in"
             android:fontFamily="@font/miriam_libre"
             android:textColor="#FFFFFF"

@@ -58,17 +58,23 @@ public class Procesador_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_procesador_);
 
 // referencias a campos en pantalla
+
         id_user_p = getIntent().getStringExtra("username");
         all_questions = getResources().getStringArray(R.array.Procesador_question);              //obtenemos array de strings de las preguntas
 
         //objeto que guarda el nombre de usuario
-        TextView tv_nombre = findViewById(R.id.tv_user_three);
+        TextView tv_nombre = findViewById(R.id.Tv_tool_user);
+        tv_username = findViewById(R.id.tv_username_three);
+        //nombre de usuario
+        tv_nombre.setText(id_user_p);                                                                  //indicamos el lugar en dónde ponemos el texto
+        tv_username.setText("Usuario: " + id_user_p);
+
         Tv_pregunta = findViewById(R.id.tv_quiz_questions_three);                                       //lugar donde se muestra la pregunta
         Rg_resp = findViewById(R.id.rg_answers_three);                                                  //grupo de opciones_r
         bt_next = findViewById(R.id.bt_next_three);                                                     //boton de avance
         //bt_prev = findViewById(R.id.bt_prev);                                                       //boton de regreso
         tv_score = findViewById(R.id.tv_score_three);
-        tv_username = findViewById(R.id.tv_username_three);
+
         tv_maxscore = findViewById(R.id.tv_maxScore_three);
         tv_vidas = findViewById(R.id.tv_vidas_three);
 
@@ -85,10 +91,7 @@ public class Procesador_Activity extends AppCompatActivity {
         }
 
 
-//nombre de usuario
 
-        tv_nombre.setText(id_user_p);                                                                  //indicamos el lugar en dónde ponemos el texto
-        tv_username.setText("Usuario: " + id_user_p);
 
 
 //TODO: condicionales de los botones
@@ -125,7 +128,8 @@ public class Procesador_Activity extends AppCompatActivity {
 //        }
 
 
-//      mp_bad = MediaPlayer.create(this, R.raw.bad);
+      mp_bad = MediaPlayer.create(this, R.raw.bad);
+      mp_great = MediaPlayer.create(this, R.raw.great);
 
     }       //fin do ONCREATE
 
@@ -182,12 +186,11 @@ public class Procesador_Activity extends AppCompatActivity {
     //TODO: Método de checar resultados
     private void CheckResults() {                                                                    //condicional que almacena los resultados
         int Correctas = 0, Incorrectas = 0;
-        mp_great = MediaPlayer.create(this, R.raw.great);
 
         AlertDialog.Builder WIN = new AlertDialog.Builder(this);                             //creamos el cuadro de alerta
         WIN.setIcon(R.drawable.ic_baseline_sentiment_very_satisfied_24);
         WIN.setTitle("¡FELICIDADES NIVEL COMPLETO!");
-        String Alerta = String.format("Puntuación = %d", Score_p);
+        String Alerta = String.format("Puntuación = 25");
         WIN.setMessage(Alerta);
         WIN.setCancelable(false);
         WIN.setNegativeButton(R.string.Start_Again, new DialogInterface.OnClickListener() {
@@ -202,20 +205,14 @@ public class Procesador_Activity extends AppCompatActivity {
                 Procesador_Activity.this.finish();
             }
         });
-        WIN.setNeutralButton("Seguir Jugando", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
 
         for  (int i = 0; i < all_questions.length; i++) {                                            //Respuestas, puntaje, vidas
             if (answer_is_correct[i]){                                                               //incrementamos valor de las respuestas
                 //Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
                 Correctas+=1;
-                tv_score.setText("Puntaje= " + Correctas + " / 50");
+                tv_score.setText("Puntaje= " + Correctas + " / 25");
                 Score_p = Correctas;                                                                 //actualizar registros en cada acierto
-                if (Correctas == 50) {
+                if (Correctas == 24) {
                     WIN.create().show();
                 }
 
@@ -233,7 +230,7 @@ public class Procesador_Activity extends AppCompatActivity {
         String username = getIntent().getStringExtra("username");
         Builder.setIcon(R.drawable.ic_baseline_sentiment_satisfied_24);
         Builder.setTitle(username + " obtuviste: ");
-        String Message = String.format("Puntuación = %d / 50\n\n¿INTENTAR DE NUEVO?", Score_p);
+        String Message = String.format("Puntuación = %d / 25\n\n¿INTENTAR DE NUEVO?", Score_p);
         Builder.setMessage(Message);
         Builder.setCancelable(false);
         Builder.setPositiveButton(R.string.Finish, new DialogInterface.OnClickListener() {
@@ -261,9 +258,9 @@ public class Procesador_Activity extends AppCompatActivity {
         }
         current_question = 0;
         ShowQuestion();
-        tv_vidas.setText(R.string.vidas);
-        tv_score.setText(R.string.puntuacion);
-        tv_maxscore.setText(R.string.maximo_puntaje);
+        tv_vidas.setText("Vidas = 3");
+        tv_score.setText("Puntaje = 0 / 25");
+        tv_maxscore.setText("MáxPuntaje = 0");
     }
 
 

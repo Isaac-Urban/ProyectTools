@@ -79,18 +79,6 @@
         app:layout_constraintStart_toEndOf="@id/tv_score_two"
         app:layout_constraintTop_toBottomOf="@id/tv_maxScore_two" />
 
-    <TextView
-        android:id="@+id/tv_user_two"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fontFamily="@font/miriam_libre"
-        android:textColor="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rg_answers_two"
-        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/bt_next_two"

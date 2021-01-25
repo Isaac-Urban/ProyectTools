@@ -55,13 +55,19 @@ public class Almacenamiento_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_almacenamiento_);
 
 // referencias a campos en pantalla
+
         //alojamos nombre usuario gracias a la key
         String id_user_a = getIntent().getStringExtra("username");
         all_questions_a = getResources().getStringArray(R.array.Almacenamiento_questions);              //obtenemos array de strings de las preguntas
 
+
         //objeto que guarda el nombre de usuario
-        TextView tv_nombre = findViewById(R.id.tv_user_one);
+        TextView tv_nombre = findViewById(R.id.Tv_tool_user);
         TextView tv_username = findViewById(R.id.tv_username_one);
+        //nombre de usuario
+        tv_nombre.setText(id_user_a);                                                                  //indicamos el lugar en dónde ponemos el texto
+        tv_username.setText("Usuario: " + id_user_a);
+
         Tv_pregunta_a = findViewById(R.id.tv_quiz_questions_one);                                       //lugar donde se muestra la pregunta
         Rg_resp_a = findViewById(R.id.rg_answers_one);                                                  //grupo de opciones_r
         bt_next_a = findViewById(R.id.bt_next_one);                                                     //boton de avance
@@ -83,10 +89,6 @@ public class Almacenamiento_Activity extends AppCompatActivity {
         }
 
 
-//nombre de usuario
-
-        tv_nombre.setText(id_user_a);                                                                  //indicamos el lugar en dónde ponemos el texto
-        tv_username.setText("Usuario: " + id_user_a);
 
 
 //TODO: condicionales de los botones
@@ -123,7 +125,8 @@ public class Almacenamiento_Activity extends AppCompatActivity {
 //        }
 
 
-//      mp_bad = MediaPlayer.create(this, R.raw.bad);
+      mp_bad = MediaPlayer.create(this, R.raw.bad);
+      mp_great = MediaPlayer.create(this, R.raw.great);
 
     }       //fin do ONCREATE
 
@@ -180,12 +183,11 @@ public class Almacenamiento_Activity extends AppCompatActivity {
     //TODO: Método de checar resultados
     private void CheckResults() {                                                                    //condicional que almacena los resultados
         int Al_Correctas = 0, Incorrectas = 0;
-//        mp_great = MediaPlayer.create(this, R.raw.great);
 
         AlertDialog.Builder WIN = new AlertDialog.Builder(this);                             //creamos el cuadro de alerta
         WIN.setIcon(R.drawable.ic_baseline_sentiment_very_satisfied_24);
         WIN.setTitle("¡FELICIDADES NIVEL COMPLETO!");
-        String Alerta = String.format("Puntuación = %d", Almacenamiento_score);
+        String Alerta = String.format("Puntuación = 25");
         WIN.setMessage(Alerta);
         WIN.setCancelable(false);
         WIN.setNegativeButton(R.string.Start_Again, new DialogInterface.OnClickListener() {
@@ -200,27 +202,18 @@ public class Almacenamiento_Activity extends AppCompatActivity {
                 Almacenamiento_Activity.this.finish();
             }
         });
-        WIN.setNeutralButton("Seguir Jugando", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
 
         for  (int i = 0; i < all_questions_a.length; i++) {                                            //Respuestas, puntaje, vidas
             if (answer_is_correct_a[i]){                                                               //incrementamos valor de las respuestas
                 //Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
                 Al_Correctas+=1;
-                Almacenamiento_score = Al_Correctas;
-                tv_score_a.setText("Puntaje= " + Al_Correctas + " / 50");
-                                                                    //actualizar registros en cada acierto  R.string.Puntaje + Correctas + " / 50"
-                if (Al_Correctas == 50) {
+                tv_score_a.setText("Puntaje= " + Al_Correctas + " / 25");
+                if (Al_Correctas == 24) {
                     WIN.create().show();
                 }
 
             }else if(!answer_is_correct_a[i]){
                 Incorrectas+=1;                                                                        //actualizar registros en cada fallo
-
             }
         }
     }
@@ -232,7 +225,7 @@ public class Almacenamiento_Activity extends AppCompatActivity {
         String username = getIntent().getStringExtra("username");
         Builder.setIcon(R.drawable.ic_baseline_sentiment_satisfied_24);
         Builder.setTitle(username + " obtuviste: ");
-        String Message = String.format("Puntuación = %d / 50\n\n¿INTENTAR DE NUEVO?", Almacenamiento_score);
+        String Message = String.format("Puntuación = %d / 25\n\n¿INTENTAR DE NUEVO?", Almacenamiento_score);
         Builder.setMessage(Message);
         Builder.setCancelable(false);
         Builder.setPositiveButton(R.string.Finish, new DialogInterface.OnClickListener() {
@@ -260,9 +253,9 @@ public class Almacenamiento_Activity extends AppCompatActivity {
         }
         current_question_a = 0;
         ShowQuestion();
-        tv_vidas_a.setText(R.string.vidas);
-        tv_score_a.setText(R.string.puntuacion);
-        tv_maxscore_a.setText(R.string.maximo_puntaje);
+        tv_vidas_a.setText("Vidas = 3");
+        tv_score_a.setText("Puntaje = 0 / 25");
+        tv_maxscore_a.setText("MáxPuntaje = 0");
     }
 
 
